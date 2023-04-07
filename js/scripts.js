@@ -28,9 +28,11 @@ function renderTodos (todosToRender) {
       outputTodo.innerHTML += `
       <div class="todos-container">
          <div class="todo ${todo.done && "done"}">
+         <label>
          <span>${i + 1}. </span>
-            <input type="checkbox" ${todo.done && "checked"} class="todo-checkbox">
             <span>${todo.text}</span>
+            <input type="checkbox" ${todo.done && "checked"} class="todo-checkbox">
+         </label>
          </div>   
          <button class="delete-button">Delete</button>
       </div>
